@@ -1,0 +1,19 @@
+.left-pane{
+    min-height: 90vh;
+    background-color: rgb(240,240,240);
+}
+input{
+    border: none;
+    outline:none;
+    font-weight: bold;
+}
+h1{
+    font-weight: 1000;
+}
+input.checkbox{
+    background-color: transparent;
+}
+button{
+    border: none;
+    outline: none;
+}
