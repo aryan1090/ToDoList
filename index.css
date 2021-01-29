@@ -10,10 +10,14 @@ input{
 h1{
     font-weight: 1000;
 }
-input.checkbox{
-    background-color: transparent;
-}
 button{
     border: none;
     outline: none;
 }
+#tasks{
+    max-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+

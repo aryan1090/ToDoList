@@ -16,11 +16,11 @@
                 Add tasks to your list by typing to the right and pressing enter.
                 You may then view pending tasks below.
             </p>
-            <div id="tasks mt-4">
-                <div class="row">
+            <div id="tasks">
+                <div class="row" id="0">
                     <div class="col-sm-6">First Task</div>
-                    <input type="checkbox" class="my-auto col-sm-1 offset-4" value="hello">
-                    <button type="button" class=" col-sm-1 close">
+                    <input type="checkbox" class="my-auto col-sm-1 offset-4" id="0" onclick="strike(id)">
+                    <button class=" col-sm-1 close" id="0" onclick="cross(id)">
                         <span aria-hidden="true">&times;</span>
                         <!-- &times; -->
                     </button>
@@ -29,7 +29,7 @@
         </div>
         <div class="right-pane col-12 col-sm-5">
             <h1>
-                <input type="text" placeholder="I need to..." id="taskinput"/>
+                <input type="text" placeholder="I need to..." id="taskinput" onkeyup="addTask(event,value)"/>
             </h1>
             
 
